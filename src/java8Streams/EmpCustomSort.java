@@ -26,8 +26,9 @@ public class EmpCustomSort {
         //System.out.println("FIltered emp are"+ employeeFiltered);
        // employeeFiltered.forEach((femp) -> System.out.println(femp));
 
-        List<Employee> agefilter = employeeList.stream().filter(a -> a.getAge() >= 10 && a.getAge() <= 30).collect(Collectors.toList());
-
-        agefilter.forEach((e-> System.out.println(e)));
+        List<Employee> age_filter = employeeList.stream().filter(a -> a.getAge() >= 10 && a.getAge() <= 30).collect(Collectors.toList());
+        for (Employee employee : age_filter) {
+            System.out.println(employee);
+        }
     }
 }
