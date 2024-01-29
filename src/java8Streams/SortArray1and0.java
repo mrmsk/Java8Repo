@@ -11,6 +11,7 @@ public class SortArray1and0 {
             System.out.println(i);
 
         }
+        //to check
         Stream<Integer> integerStream = Stream.of(inputarray);
         integerStream.forEach(s -> {
             System.out.println(s);
